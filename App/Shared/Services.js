@@ -14,8 +14,19 @@ const Logout=()=>{
     AsyncStorage.clear()
 }
 
+
+const setCourseProgress=async(key,value)=>{
+    await AsyncStorage.setItem(key,value.toString() )
+}
+
+const getCourseProgress=async(key)=>{
+   return JSON.parse( await AsyncStorage.getItem(key))
+}
+
 export default{
     setUserAuth,
     getUserAuth,
-    Logout
+    Logout,
+    setCourseProgress,
+    getCourseProgress
 }

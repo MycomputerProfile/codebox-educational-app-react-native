@@ -61,7 +61,8 @@ export default function Login() {
             <TouchableOpacity onPress={()=>setUserData({
               name:'Rahul Sanap',
               picture:'https://cdn3d.iconscout.com/3d/premium/thumb/male-customer-call-service-portrait-6760890-5600697.png?f=webp',
-              email:'rahul@gmail.com'
+              email:'rahul@gmail.com',
+              id:1
            })}>
             <Text>Skip</Text>
             </TouchableOpacity>
@@ -77,7 +78,8 @@ const styles = StyleSheet.create({
         marginTop:-25,
         backgroundColor:'#fff',
         borderTopRightRadius:30,
-        borderTopLeftRadius:30
+        borderTopLeftRadius:30,
+        height:'100%'
     },
     welcomeText:{
         fontSize:35,

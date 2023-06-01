@@ -33,7 +33,7 @@ export default function Slider() {
             <View>
                 <Image source={{uri:item.image}} 
                 style={{width:Dimensions.get('screen').width*0.87
-                    ,height:150,borderRadius:10,marginRight:15}}
+                    ,height:180,borderRadius:10,marginRight:15}}
                 />
             </View>
         )}

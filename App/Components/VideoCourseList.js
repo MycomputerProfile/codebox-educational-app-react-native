@@ -29,7 +29,7 @@ export default function VideoCourseList() {
     }
     const onPressCourse=(course)=>{
         
-        navigation.navigate('course-detail',{courseData:course})
+        navigation.navigate('course-detail',{courseData:course,courseType:'video'})
     }
   return (
     <View style={{marginTop:15}}>
