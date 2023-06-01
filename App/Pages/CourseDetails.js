@@ -39,8 +39,8 @@ export default function CourseDetails() {
 
  
   return (
-    <View style={{padding:20,paddingTop:50}}>
-        <TouchableOpacity onPress={()=>navigation.goBack()}>
+    <ScrollView style={{padding:20,paddingTop:50}}>
+        <TouchableOpacity onPress={()=>navigation.goBack()} style={{marginBottom:10}}>
         <Ionicons name="arrow-back-sharp" size={24} color="black" />
         </TouchableOpacity>
         <View>
@@ -48,15 +48,14 @@ export default function CourseDetails() {
             fontWeight:'bold'}}>{course.name}</Text>
             <Text style={{color:Colors.gray}}>By Tubeguruji</Text>
             <Image source={{uri:course.image}} 
-            style={{height:150,marginTop:10,borderRadius:10}} />
-            <Text style={{marginTop:10,
+            style={{height:180,marginTop:10,borderRadius:10}} />
+            <Text style={{marginTop:15,
                fontSize:16, fontWeight:'bold'}}>About Course</Text>
             <Text numberOfLines={4} 
-            style={{color:Colors.gray}}>{course.description}</Text>
+            style={{color:Colors.gray,lineHeight:22}}>{course.description}</Text>
         </View>
-        <CourseContent course={course} 
-         userProgress={userProgress}
-         courseType={param.courseType} />
-    </View>
+        <CourseContent course={course} userProgress={userProgress}
+        courseType={param.courseType} />
+    </ScrollView>
   )
 }

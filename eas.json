@@ -14,6 +14,14 @@
       "preview3": {
         "developmentClient": true
       },
+<<<<<<< HEAD
+=======
+      "development": {
+        "developmentClient": true,
+        "distribution": "internal"
+      },
+    
+>>>>>>> bc3a4f168ff4b7e92dad656aa2ab719ac57ef85d
       "production": {
         "node": "16.13.0"
       }

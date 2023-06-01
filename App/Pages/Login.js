@@ -78,7 +78,8 @@ const styles = StyleSheet.create({
         marginTop:-25,
         backgroundColor:'#fff',
         borderTopRightRadius:30,
-        borderTopLeftRadius:30
+        borderTopLeftRadius:30,
+        height:'100%'
     },
     welcomeText:{
         fontSize:35,

@@ -16,13 +16,12 @@ api.get('course-lists?filters[type][$eq]='
 
 const setCourseProgress=(data)=>api.post('/course-progresses',data);
 
-const getCourseProgress=(uid,courseId)=>
-api.get('/course-progresses?filters[uid][$eq]='
+const getCourseProgress=(uid,courseId)=>api.get('/course-progresses?filters[uid][$eq]='
 +uid+'&filters[courseId][$eq]='+courseId)
 export default{
     getSlider,
     getVideoCourse,
-    getCourseList, 
+    getCourseList,
     setCourseProgress,
     getCourseProgress
 }
